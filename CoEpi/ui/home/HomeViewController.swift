@@ -11,6 +11,8 @@ class HomeViewController: UIViewController {
     @IBAction func seeAlertsButtonTapped(_ sender: UIButton) {
         viewModel.seeAlertsTapped()
     }
+    @IBOutlet weak var myHealthDescriptionLabel: UILabel!
+    @IBOutlet weak var contactAlertsDescriptionLabel: UILabel!
     init(viewModel: HomeViewModel) {
         self.viewModel = viewModel
         super.init(nibName: String(describing: Self.self), bundle: nil)
@@ -28,7 +30,20 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-              
+        
+        let paragraphStyle = NSMutableParagraphStyle()
+
+        paragraphStyle.lineHeightMultiple = 1.07
+        
+        myHealthDescriptionLabel.numberOfLines = 0
+        myHealthDescriptionLabel.lineBreakMode = .byWordWrapping
+        myHealthDescriptionLabel.sizeToFit()
+        
+        myHealthDescriptionLabel.attributedText = NSMutableAttributedString(string: "Monitor your health \rand report symptoms.", attributes: [NSAttributedString.Key.kern: 0.25, NSAttributedString.Key.paragraphStyle: paragraphStyle ])
+        
+        contactAlertsDescriptionLabel.numberOfLines = 0
+        contactAlertsDescriptionLabel.lineBreakMode = .byWordWrapping
+        contactAlertsDescriptionLabel.attributedText = NSMutableAttributedString(string: "Approximate times \rthat you may have been exposed \rto a symptomatic individual", attributes: [NSAttributedString.Key.kern: 0.25, NSAttributedString.Key.paragraphStyle: paragraphStyle])
         configureCardView(cardView: self.stackContainerView)
         configureCardView(cardView: self.stackContainerViewTwo)
     }
