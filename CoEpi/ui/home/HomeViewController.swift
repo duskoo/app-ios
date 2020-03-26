@@ -5,6 +5,12 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var stackContainerView: UIView!
     @IBOutlet weak var stackContainerViewTwo: UIView!
+    @IBAction func checkInButtonTapped(_ sender: UIButton) {
+        viewModel.quizTapped()
+    }
+    @IBAction func seeAlertsButtonTapped(_ sender: UIButton) {
+        viewModel.seeAlertsTapped()
+    }
     init(viewModel: HomeViewModel) {
         self.viewModel = viewModel
         super.init(nibName: String(describing: Self.self), bundle: nil)
