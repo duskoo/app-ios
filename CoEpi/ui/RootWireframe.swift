@@ -6,6 +6,7 @@ class RootWireFrame {
 
     private var homeViewController: HomeViewController?
     private var onboardingWireframe: OnboardingWireframe?
+    private var rootNavigationController = UINavigationController()
 
     init(container: DependencyContainer, window: UIWindow) {
         self.container = container
@@ -15,7 +16,10 @@ class RootWireFrame {
         homeViewModel.delegate = self
         
         let homeViewController = HomeViewController(viewModel: homeViewModel)
-        window.rootViewController = homeViewController
+                
+        rootNavigationController.setViewControllers([homeViewController], animated: false)
+        
+        window.rootViewController = rootNavigationController
         window.makeKeyAndVisible()
 
         self.homeViewController = homeViewController
@@ -38,5 +42,18 @@ extension RootWireFrame : HomeViewModelDelegate {
 
         let debugViewController = DebugViewController(viewModel: debugViewModel)
         homeViewController?.present(debugViewController, animated: true, completion: nil)
+    }
+    
+    func quizTapped() {
+        showQuiz()
+    }
+    
+    private func showQuiz() {
+        let quizViewController = HealthQuizViewController.init(nibName: String(describing:HealthQuizViewController.self), bundle: nil
+        )
+        quizViewController.title = "My Health"
+        rootNavigationController.pushViewController(quizViewController, animated: true)
+        
+        
     }
 }
