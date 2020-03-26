@@ -21,9 +21,6 @@ class HomeViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    @IBAction func quizTapped(_ sender: Any) {
-        viewModel.quizTapped()
-    }
     @IBAction func debugTapped(_: UIButton) {
         viewModel.debugTapped()
     }
