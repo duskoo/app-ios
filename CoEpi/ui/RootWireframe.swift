@@ -16,10 +16,10 @@ class RootWireFrame {
         homeViewModel.delegate = self
         
         let homeViewController = HomeViewController(viewModel: homeViewModel)
-                
         rootNavigationController.setViewControllers([homeViewController], animated: false)
         
         window.rootViewController = rootNavigationController
+        window.rootViewController = homeViewController
         window.makeKeyAndVisible()
 
         self.homeViewController = homeViewController
