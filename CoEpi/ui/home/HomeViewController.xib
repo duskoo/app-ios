@@ -30,111 +30,96 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ho3-Q1-9Ta">
                     <rect key="frame" x="16" y="124" width="382" height="125"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="aX7-Ex-hid">
-                            <rect key="frame" x="20" y="20" width="141" height="105"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" ambiguous="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="L6C-OZ-2Zi">
+                            <rect key="frame" x="71" y="9" width="94" height="107"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yV0-9K-wxP">
-                                    <rect key="frame" x="0.0" y="0.0" width="40" height="105"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health icon" translatesAutoresizingMaskIntoConstraints="NO" id="a5t-De-bYe">
-                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="Pm1-Gm-oTQ"/>
-                                                <constraint firstAttribute="width" constant="40" id="Yns-pp-Npz"/>
-                                            </constraints>
-                                        </imageView>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gZ-36-etg">
-                                            <rect key="frame" x="0.0" y="50" width="40" height="55"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        </view>
-                                    </subviews>
-                                </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="L6C-OZ-2Zi">
-                                    <rect key="frame" x="63" y="0.0" width="78" height="105"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKZ-Mp-cvR">
-                                            <rect key="frame" x="0.0" y="0.0" width="78" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDq-6a-Gjc">
-                                            <rect key="frame" x="0.0" y="32.5" width="78" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctf-a4-WBU">
-                                            <rect key="frame" x="0.0" y="65" width="78" height="40"/>
-                                            <state key="normal" title="CHECK-IN"/>
-                                            <connections>
-                                                <action selector="checkInButtonTapped:" destination="-1" eventType="touchUpInside" id="oNT-FQ-756"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKZ-Mp-cvR">
+                                    <rect key="frame" x="8" y="8" width="78" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDq-6a-Gjc">
+                                    <rect key="frame" x="8" y="38.5" width="42" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctf-a4-WBU">
+                                    <rect key="frame" x="8" y="69" width="71" height="30"/>
+                                    <state key="normal" title="CHECK-IN"/>
+                                    <connections>
+                                        <action selector="checkInButtonTapped:" destination="-1" eventType="touchUpInside" id="oNT-FQ-756"/>
+                                    </connections>
+                                </button>
                             </subviews>
+                            <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                         </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health icon" translatesAutoresizingMaskIntoConstraints="NO" id="a5t-De-bYe">
+                            <rect key="frame" x="8" y="8" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="Eb4-5w-6k8"/>
+                                <constraint firstAttribute="height" constant="40" id="Pm1-Gm-oTQ"/>
+                                <constraint firstAttribute="width" constant="40" id="Yns-pp-Npz"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="pAH-Gp-DWW"/>
+                            </constraints>
+                            <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstItem="a5t-De-bYe" firstAttribute="top" secondItem="ho3-Q1-9Ta" secondAttribute="top" constant="8" id="Eu2-BZ-Scz"/>
                         <constraint firstAttribute="height" constant="125" id="IHQ-Tc-kUE"/>
+                        <constraint firstItem="L6C-OZ-2Zi" firstAttribute="leading" secondItem="a5t-De-bYe" secondAttribute="trailing" constant="23" id="RyI-u4-vDc"/>
+                        <constraint firstItem="a5t-De-bYe" firstAttribute="leading" secondItem="ho3-Q1-9Ta" secondAttribute="leading" constant="8" id="tg8-zX-sNJ"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="871-hC-mXL">
                     <rect key="frame" x="16" y="282" width="382" height="125"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="Oda-X3-SiX">
-                            <rect key="frame" x="20" y="20" width="149" height="95"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact icon" translatesAutoresizingMaskIntoConstraints="NO" id="zio-Rs-7WL">
+                            <rect key="frame" x="8" y="8" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Dfi-Hp-fOn"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Yen-q6-bYs"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="fzP-ig-h4P"/>
+                                <constraint firstAttribute="width" constant="40" id="zBh-Gy-eZ8"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aAJ-5K-KGC">
+                            <rect key="frame" x="71" y="8" width="102" height="107"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QCR-zu-vA0">
-                                    <rect key="frame" x="0.0" y="0.0" width="40" height="95"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact icon" translatesAutoresizingMaskIntoConstraints="NO" id="zio-Rs-7WL">
-                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="PMk-t3-uvr"/>
-                                                <constraint firstAttribute="width" constant="40" id="nYA-Az-Jwv"/>
-                                            </constraints>
-                                        </imageView>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7i-9w-609">
-                                            <rect key="frame" x="0.0" y="40" width="40" height="55"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        </view>
-                                    </subviews>
-                                </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="aAJ-5K-KGC">
-                                    <rect key="frame" x="63" y="0.0" width="86" height="95"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H3-EG-gYR">
-                                            <rect key="frame" x="0.0" y="0.0" width="86" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ION-yb-bj7">
-                                            <rect key="frame" x="0.0" y="32.5" width="86" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu4-6I-1eQ">
-                                            <rect key="frame" x="0.0" y="65" width="86" height="30"/>
-                                            <state key="normal" title="SEE ALERTS"/>
-                                            <connections>
-                                                <action selector="seeAlertsButtonTapped:" destination="-1" eventType="touchUpInside" id="PGL-Kb-Qn7"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                    <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H3-EG-gYR">
+                                    <rect key="frame" x="8" y="8" width="86" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ION-yb-bj7">
+                                    <rect key="frame" x="8" y="38.5" width="86" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu4-6I-1eQ">
+                                    <rect key="frame" x="8" y="69" width="86" height="30"/>
+                                    <state key="normal" title="SEE ALERTS"/>
+                                    <connections>
+                                        <action selector="seeAlertsButtonTapped:" destination="-1" eventType="touchUpInside" id="PGL-Kb-Qn7"/>
+                                    </connections>
+                                </button>
                             </subviews>
+                            <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                         </stackView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstItem="zio-Rs-7WL" firstAttribute="leading" secondItem="871-hC-mXL" secondAttribute="leading" constant="8" id="JTJ-Qu-xQr"/>
                         <constraint firstAttribute="height" constant="125" id="UFv-MF-efp"/>
+                        <constraint firstItem="zio-Rs-7WL" firstAttribute="top" secondItem="871-hC-mXL" secondAttribute="top" constant="8" id="Yz4-4q-iea"/>
+                        <constraint firstItem="aAJ-5K-KGC" firstAttribute="leading" secondItem="zio-Rs-7WL" secondAttribute="trailing" constant="23" id="fSL-c1-5Tn"/>
                     </constraints>
                 </view>
             </subviews>
